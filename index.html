@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Start</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="dist/css/main.css">
+  <script src="dist/js/main.js"></script>
+  <script src="dist/js/libs.js"></script>
+  <script src="dist/js/wow.js"></script>
+  <link rel="stylesheet" href="dist/css/libs.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="nav__fixed">
+    <div class="nav" id="js-navigation">
+      <div class="nav__container container">
+        <div class="nav__row row">
+          <div class="nav__logo ">
+            <button class="hamburger hamburger_effect-2" type="button" id="js-nav-hamburger">
+              <span class="hamburger__lines">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+            <div class="nav__logo-inner">
+              <img class="nav__logo-img" src="./src/img/icons/logo.png" alt="Grono">
+            </div>
+          </div>
+          <nav class="nav__menu" id="js-navigation-menu">
+            <ul>
+              <li class="nav__menu-item">
+                <a class="nav__menu-item-link js-menu-item-link active" href="#section-greeting">Этапы обучения</a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-about">Практика</a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-trend">Сертификат</a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-video">Начать обучение</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <section class="introduction">
+      <div class="container">
+        <div class="introduction__description">
+          <img class="introduction__decoration" src="./src/img/icons/dollar.png">
+          <div class="introduction__block wow animated fadeInUp">
+            <p class="introduction__text">Это обучение поможет тебе <br> <strong>быстро стартовать в бизнесе</strong>, <br> и развить Лидерские качества.</p>
+            <div class="introduction__stars">
+              <img src="./src/img/icons/star.svg">
+              <img src="./src/img/icons/star.svg">
+              <img src="./src/img/icons/star.svg">
+              <img src="./src/img/icons/star.svg">
+              <img src="./src/img/icons/star.svg">
+            </div>
+          </div>
+        </div>
+        <div class="introduction__content">
+          <h1 class="introduction__title"> <strong>Мы создали</strong> эффективну <br> систему обучения</h1>
+          <h2 class="introduction__subtitle">«Мощный запуск: <br> от "0" до результата»</h2>
+        </div>
+        <img class="introduction__background" src="./src/img/backgrounds/description__background.png">
+      </div>
+      <img class="rectangle rectangle__bottom" src="./src/img/backgrounds/section__bottom.png">
+    </section>
+    <section class="video">
+      <div class="container">
+        <div class="video__wrapper">
+          <div class="section-header">
+            <div class="section-header__inner">
+              <p class="section-header__background">grono</p>
+              <h3 class="section-header__title">Добро пожаловать в <br>команду Grono Team</h3>
+            </div>
+         </div>
+         <div class="video__content">
+              <img class="video__decoration" src="./src/img/backgrounds/video__decoration.png">
+              <img alt="Мы строим" class="lazy video__bg" src="./src/img/backgrounds/video-section-iframe.png">
+              <button data-action="modal" data-open="#modal-video" data-video="https://www.youtube.com/embed/C_9JDo6K0Pw" class="video__play"><div class="video__triangle"></div></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="studying">
+      <div class="container">
+        <div class="studying__wrapper">
+          <div class="section-header">
+            <div class="section-header__inner">
+              <p class="section-header__background">обучение</p>
+              <h3 class="section-header__title">Программа обучения</h3>
+            </div>
+         </div>
+         <div class="tabs">
+           <ul class="tabs__list">
+               <li class="tabs__list-item active">
+               <a data-action="tab" data-target="#lesson1" class="tabs__list-link">Урок 1</a></li>
+               <li class="tabs__list-item">
+               <a data-action="tab" data-target="#lesson2" class="tabs__list-link">Урок 2</a></li>
+               <li class="tabs__list-item">
+               <a data-action="tab" data-target="#lesson3" class="tabs__list-link">Урок 3</a></li>
+               <li class="tabs__list-item">
+               <a data-action="tab" data-target="#lesson4" class="tabs__list-link">Урок 4</a></li>
+               <li class="tabs__list-item">
+               <a data-action="tab" data-target="#lesson5" class="tabs__list-link">Урок 5</a></li>
+           </ul>
+           <div class="tabs__content">
+               <div class="tabs__item active" id="lesson1">
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
+                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Алексей Кременски</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
+                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Евгений Галеев</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
+                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Евгений Галеев</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="tabs__item" id="lesson2">
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
+                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Алексей Кременски</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="tabs__item" id="lesson3">
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
+                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Алексей Кременски</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
+                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Евгений Галеев</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="tabs__item" id="lesson4">
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
+                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Алексей Кременски</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
+                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Евгений Галеев</p>
+                   </div>
+                 </div>
+               </div>
+               <div class="tabs__item" id="lesson5">
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
+                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Алексей Кременски</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
+                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
+                   <div class="tabs__person">
+                     <img src="./src/img/icons/person.svg">
+                     <p class="tabs__name">Евгений Галеев</p>
+                   </div>
+                 </div>
+               </div>
+           </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="practice">
+      <div class="section-header">
+        <div class="section-header__inner">
+          <p class="section-header__background">практика</p>
+          <h3 class="section-header__title">Все задания - практические</h3>
+        </div>
+       </div>
+        <div class="practice__wrapper">
+          <div class="practice__background">
+            <img src="./src/img/backgrounds/practice__background.png">
+          </div>
+          <div class="practice__content">
+            <div class="practice__content-inner">
+              <p class="practice__title"> Никакой теории, поэтому выполняй тщательно каждое задание. </p>
+              <p class="practice__text">В течении всего обучения будь постоянно на связи со спонсором и задавай вопросы если что-то будет не понятно.</p>
+              <button class="btn">Начать обучение</button>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="time">
+      <div class="section-header">
+        <div class="section-header__inner">
+          <p class="section-header__background">обучение</p>
+          <h3 class="section-header__title section-header__title-line">Как будет проходить обучение <br> и сколько на это надо времени:</h3>
+          <p class="section-header__subtitle">Обучение состоит из заданий на каждое из которых выделяется два дня.</p>
+        </div>
+       </div>
+      <div class="container">
+        <div class="time__wrapper">
+          <div class="time__background">
+            <img src="./src/img/backgrounds/time__background.gif">
+          </div>
+          <div class="time__content">
+            <div class="time__block">
+              <p class="time__heading">1 день</p>
+              <p class="time__text">Первый день – <strong>ты получаешь задание,</strong> <br> обсуждаешь его со спонсором и выполняешь его.</p>
+            </div>
+            <div class="time__block">
+              <p class="time__heading">2 день</p>
+              <p class="time__text">На следующий день <strong>сдаешь отчет и спонсор принимает его проверяя все</strong> ли ты сделал и правильно ли усвоил информацию.</p>
+            </div>
+            <div class="time__block">
+              <p class="time__heading">новое задание</p>
+              <p class="time__text">Только после этого ты получаешь второе задание.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    </div>
+  </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,57 @@
+body{
+  background: #ffffff;
+  color: #ffffff;
+  font-family: 'Gotham Pro';
+}
+strong{
+  font-weight: 800;
+}
+section{
+  display: flex;
+  justify-content: center;
+}
+img{
+  max-width: 100%;
+}
+.container{
+  width: 80%;
+  max-width: 1170px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  max-width: 100%;
+  padding: 14px;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  outline: 0;
+  background-color: $orange;
+  color: $white;
+  transition: all .5s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+
+  @media(min-width: 768px){
+    padding: 16px 25px;
+    font-size: 15px;
+  }
+}
+.rectangle{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  &__bottom{
+    bottom: -20px;
+  }
+}
