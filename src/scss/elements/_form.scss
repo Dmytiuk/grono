@@ -1,0 +1,28 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  input{
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: #F2F3F7;
+    border: 0;
+    outline: none;
+    &:nth-last-of-type(1){
+      margin-bottom: 30px;
+    }
+  }
+  input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+  input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+  input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+  input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+  input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+  input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+  input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+  input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+  &__title{
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,74 @@
+.certificate{
+  position: relative;
+  margin-top: 150px;
+  background: url('../../src/img/backgrounds/certificate__background2.png');
+  justify-content: center;
+  &__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 170px 0;
+    width: 70%;
+  }
+  &__decoration{
+    position: relative;
+    width: 50%;
+    &-background{
+      opacity: 0.6;
+    }
+    &-icon{
+      position: absolute;
+      top: 101px;
+      left: -30px;
+      z-index: 2;
+      filter: drop-shadow(2.179px 24.905px 45px rgba(0,92,152,0.75));
+    }
+    &-mail{
+      position: absolute;
+      left: -10px;
+      top: 25%;
+      filter: drop-shadow(2.179px 24.905px 45px rgba(0,92,152,0.75));
+    }
+  }
+  &__content{
+    width: 50%;
+  }
+  &__title{
+    font-weight: bold;
+    position: relative;
+    &:before{
+      position: absolute;
+      top: 100%;
+      width: 20%;
+      height: 4px;
+      border-radius: 10px;
+      content: '';
+      background-color: $orange;
+    }
+    @media(min-width: 1025px){
+      font-size: 50px;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  &__text{
+    line-height: 1.5;
+    @media(min-width: 1025px){
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  &__subtitle{
+    font-weight: bold;
+    @media(min-width: 1025px){
+      font-size: 20px;
+    }
+  }
+  &__arrow{
+    position: absolute;
+    bottom: 270px;
+    left: 50%;
+    transform: translate( -50% , 0);
+  }
+}

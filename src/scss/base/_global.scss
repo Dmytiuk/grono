@@ -13,6 +13,10 @@ section{
 img{
   max-width: 100%;
 }
+a{
+  color: $white;
+  text-decoration: none;
+}
 .container{
   width: 80%;
   max-width: 1170px;
@@ -24,6 +28,7 @@ img{
   position: relative;
   z-index: 1;
   display: inline-block;
+  width: fit-content;
   max-width: 100%;
   padding: 14px;
   overflow: hidden;

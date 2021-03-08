@@ -12,6 +12,7 @@
     }
     &__inner{
       position: relative;
+      text-align: center;
     }
     &__background{
           position: absolute;
@@ -61,11 +62,11 @@
           }
         }
       }
-      @media(min-width: 1025px){
-        font-size: 30px;
-      }
       @media(min-width: 768px){
         font-size: 25px;
+      }
+      @media(min-width: 1025px){
+        font-size: 30px;
       }
     }
     &__subtitle{
