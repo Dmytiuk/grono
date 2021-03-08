@@ -1,5 +1,5 @@
 .practice{
-  padding-top: 300px;
+  padding-top: 150px;
   flex-direction: column;
   &__wrapper{
     display: flex;
@@ -9,14 +9,47 @@
   &__background{
     position: relative;
     width: 40%;
+    left: -15px;
     img{
-      
+
     }
   }
   &__content{
     width: 50%;
     &-inner{
       width: 70%;
+    }
+  }
+  &__decor{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange;
+    border-radius: 10px;
+    box-shadow: 2.179px 24.905px 80.1px 9.9px rgba(0, 92, 152, 0.75);
+    &_question{
+      top: 80px;
+      right: 20px;
+      img{
+        width: 46px;
+        height: 84px;
+        padding: 0 0 12px 12px;
+      }
+    }
+    &_tel{
+      bottom: 80px;
+      left: 90px;
+    }
+    &_message{
+      width: auto;
+      height: auto;
+      left: calc(50% - 115px);
+      top: calc(50% - 46px);
+      opacity: .7!important;
+      transform: translate(-50% , -50%);
     }
   }
   &__title{
