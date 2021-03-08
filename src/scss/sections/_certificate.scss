@@ -2,41 +2,69 @@
   position: relative;
   margin-top: 150px;
   background: url('../../src/img/backgrounds/certificate__background2.png');
+  background-size: cover;
   justify-content: center;
+  @media(max-width: 768px){
+    background: url('../../src/img/backgrounds/certificate__background2.png') center;
+  }
   &__wrapper{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 170px 0;
+    padding: 100px 0;
+    width: 80%;
+    flex-direction: column;
+    @media(min-width: 768px){
+      padding: 170px 0;
+    flex-direction: row;
     width: 70%;
+    }
   }
   &__decoration{
     position: relative;
+    width: 70%;
+    @media(min-width: 768px){
     width: 50%;
+    }
     &-background{
       opacity: 0.6;
     }
     &-icon{
       position: absolute;
-      top: 101px;
+      top: 70px;
       left: -30px;
+      width: 50px;
       z-index: 2;
       filter: drop-shadow(2.179px 24.905px 45px rgba(0,92,152,0.75));
+      @media(min-width: 768px){
+        width: auto;
+        top: 101px;
+        left: -30px;
+      }
     }
     &-mail{
       position: absolute;
-      left: -10px;
+      left: 0px;
       top: 25%;
       filter: drop-shadow(2.179px 24.905px 45px rgba(0,92,152,0.75));
+      @media(min-width: 768px){
+      left: -10px;
+      }
     }
   }
   &__content{
+    width: 100%;
+    @media(min-width: 768px){
     width: 50%;
+    }
   }
   &__title{
     font-weight: bold;
     position: relative;
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
     &:before{
       position: absolute;
       top: 100%;
@@ -46,17 +74,18 @@
       content: '';
       background-color: $orange;
     }
-    @media(min-width: 1025px){
+
+    @media(min-width: 768px){
       font-size: 50px;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
+
     }
   }
   &__text{
     line-height: 1.5;
+    font-size: 20px;
+    margin-bottom: 30px;
     @media(min-width: 1025px){
-      font-size: 20px;
-      margin-bottom: 30px;
+
     }
   }
   &__subtitle{
@@ -67,8 +96,13 @@
   }
   &__arrow{
     position: absolute;
-    bottom: 270px;
-    left: 50%;
-    transform: translate( -50% , 0);
+    bottom: 300px;
+    left: 95%;
+    transform: translate( -50% , 0) rotate(-90deg);
+    @media(min-width: 769px){
+      bottom: 270px;
+      left: 50%;
+      transform: translate( -50% , 0);
+    }
   }
 }

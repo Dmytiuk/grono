@@ -1,5 +1,8 @@
 .studying{
-  padding-top: 120px;
+  padding-top: 60px;
+  @media(min-width: 769px){
+    padding-top: 120px;
+  }
   &__wrapper{
     display: flex;
     align-items: center;

@@ -3,9 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media(min-width: 1025px){
+      background-color: #136f8f;
+      height: 120px;
+  @media(min-width: 769px){
     height: 200px;
-    background-color: #136f8f;
+
   }
   &__logo{
     position: absolute;

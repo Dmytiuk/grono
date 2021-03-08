@@ -34,16 +34,16 @@
           <nav class="nav__menu" id="js-navigation-menu">
             <ul>
               <li class="nav__menu-item">
-                <a class="nav__menu-item-link js-menu-item-link active" href="#section-greeting">Этапы обучения</a>
+                <a class="nav__menu-item-link js-menu-item-link active" href="#section-studying">Этапы обучения</a>
               </li>
               <li class="nav__menu-item">
-                <a class="nav__menu-item-link js-menu-item-link" href="#section-about">Практика</a>
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-practice">Практика</a>
               </li>
               <li class="nav__menu-item">
-                <a class="nav__menu-item-link js-menu-item-link" href="#section-trend">Сертификат</a>
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-certificate">Сертификат</a>
               </li>
               <li class="nav__menu-item">
-                <a class="nav__menu-item-link js-menu-item-link" href="#section-video">Начать обучение</a>
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-start">Начать обучение</a>
               </li>
             </ul>
           </nav>
@@ -72,9 +72,13 @@
           <h1 class="introduction__title"> <strong>Мы создали</strong> эффективну <br> систему обучения</h1>
           <h2 class="introduction__subtitle">«Мощный запуск: <br> от "0" до результата»</h2>
         </div>
-        <img class="introduction__background" src="./src/img/backgrounds/description__background.png">
+
       </div>
+      <img class="introduction__background" src="./src/img/backgrounds/description__background.png">
       <img class="rectangle rectangle__bottom" src="./src/img/backgrounds/section__bottom.png">
+      <div class="next-button__wrapper ">
+          <a class="anchor-next next-button"></a>
+      </div>
     </section>
     <section class="video">
       <div class="container">
@@ -93,7 +97,7 @@
         </div>
       </div>
     </section>
-    <section class="studying">
+    <section class="studying" id="section-studying">
       <div class="container">
         <div class="studying__wrapper">
           <div class="section-header">
@@ -105,15 +109,20 @@
          <div class="tabs">
            <ul class="tabs__list">
                <li class="tabs__list-item active">
-               <a data-action="tab" data-target="#lesson1" class="tabs__list-link">Урок 1</a></li>
+               <a data-action="tab" data-target="#lesson1" class="tabs__list-link desk">Урок 1</a>
+               <a data-action="tab" data-target="#lesson1" class="tabs__list-link mob">#1</a></li>
                <li class="tabs__list-item">
-               <a data-action="tab" data-target="#lesson2" class="tabs__list-link">Урок 2</a></li>
+               <a data-action="tab" data-target="#lesson2" class="tabs__list-link desk">Урок 2</a>
+               <a data-action="tab" data-target="#lesson2" class="tabs__list-link mob">#2</a></li>
                <li class="tabs__list-item">
-               <a data-action="tab" data-target="#lesson3" class="tabs__list-link">Урок 3</a></li>
+               <a data-action="tab" data-target="#lesson3" class="tabs__list-link desk">Урок 3</a>
+               <a data-action="tab" data-target="#lesson3" class="tabs__list-link mob">#3</a></li>
                <li class="tabs__list-item">
-               <a data-action="tab" data-target="#lesson4" class="tabs__list-link">Урок 4</a></li>
+               <a data-action="tab" data-target="#lesson4" class="tabs__list-link desk">Урок 4</a>
+               <a data-action="tab" data-target="#lesson4" class="tabs__list-link mob">#4</a></li>
                <li class="tabs__list-item">
-               <a data-action="tab" data-target="#lesson5" class="tabs__list-link">Урок 5</a></li>
+               <a data-action="tab" data-target="#lesson5" class="tabs__list-link desk">Урок 5</a>
+               <a data-action="tab" data-target="#lesson5" class="tabs__list-link mob">#5</a></li>
            </ul>
            <div class="tabs__content">
                <div class="tabs__item active" id="lesson1">
@@ -137,92 +146,121 @@
                     <p class="tabs__name">Евгений Галеев</p>
                    </div>
                  </div>
-                 <div class="tabs__block">
-                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
-                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
-                   <div class="tabs__person">
-                     <div class="tabs__person-img">
-                        <img src="./src/img/icons/person.svg">
-                     </div>
-                     <p class="tabs__name">Евгений Галеев</p>
-                   </div>
-                 </div>
                </div>
                <div class="tabs__item" id="lesson2">
                  <div class="tabs__block">
-                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
-                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <p class="tabs__heading">Тренинг о Мечтах и постановке целей</p>
                    <div class="tabs__person">
                      <div class="tabs__person-img">
                         <img src="./src/img/icons/person.svg">
                      </div>
-                     <p class="tabs__name">Алексей Кременски</p>
+                     <p class="tabs__name">Элеонора Юнусова</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Бесплатное членство:</p>
+                   <p class="tabs__text">Детальный разбор условий выполнения </p>
+                   <div class="tabs__person">
+                     <div class="tabs__person-img">
+                        <img src="./src/img/icons/person.svg">
+                     </div>
+                    <p class="tabs__name">Алена Схаб</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Быстрый старт:</p>
+                   <p class="tabs__text">Детальный разбор условий выполнения</p>
+                   <div class="tabs__person">
+                     <div class="tabs__person-img">
+                        <img src="./src/img/icons/person.svg">
+                     </div>
+                    <p class="tabs__name">Алексей Кременский</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Мой первый круиз:</p>
+                   <p class="tabs__text">Практический тренинг по планированию и выбору своего первого круиза</p>
+                   <div class="tabs__person">
+                     <div class="tabs__person-img">
+                        <img src="./src/img/icons/person.svg">
+                     </div>
+                    <p class="tabs__name">Александр Таррагона</p>
                    </div>
                  </div>
                </div>
                <div class="tabs__item" id="lesson3">
                  <div class="tabs__block">
-                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
-                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <p class="tabs__heading">Соц сети:</p>
+                   <p class="tabs__text">Практический тренинг по позиционированию и продвежению в Соц сетях</p>
                    <div class="tabs__person">
                      <div class="tabs__person-img">
                         <img src="./src/img/icons/person.svg">
                      </div>
-                     <p class="tabs__name">Алексей Кременски</p>
+                    <p class="tabs__name">Илона Дарменова</p>
                    </div>
                  </div>
                  <div class="tabs__block">
-                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
-                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
+                   <p class="tabs__heading">Онлайн Воронка:</p>
+                   <p class="tabs__text">Создание Автоматизированой воронки продаж на платформе Grono</p>
                    <div class="tabs__person">
                      <div class="tabs__person-img">
                         <img src="./src/img/icons/person.svg">
                      </div>
-                     <p class="tabs__name">Евгений Галеев</p>
+                    <p class="tabs__name">Алексей Кременский</p>
                    </div>
                  </div>
                </div>
                <div class="tabs__item" id="lesson4">
                  <div class="tabs__block">
-                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
-                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <p class="tabs__heading">Приглашения:</p>
+                   <p class="tabs__text">Типы приглашений, скрипты приглашений</p>
                    <div class="tabs__person">
                      <div class="tabs__person-img">
                         <img src="./src/img/icons/person.svg">
                      </div>
-                     <p class="tabs__name">Алексей Кременски</p>
+                    <p class="tabs__name">Инга Мишина</p>
                    </div>
                  </div>
                  <div class="tabs__block">
-                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
-                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
+                   <p class="tabs__heading">Список контактов</p>
+                   <p class="tabs__text">Работа с тетрадью Сетевика</p>
                    <div class="tabs__person">
                      <div class="tabs__person-img">
                         <img src="./src/img/icons/person.svg">
                      </div>
-                     <p class="tabs__name">Евгений Галеев</p>
+                    <p class="tabs__name">Инга Мишина</p>
                    </div>
                  </div>
                </div>
                <div class="tabs__item" id="lesson5">
                  <div class="tabs__block">
-                   <p class="tabs__heading">Обзор кабинета Инкрузес:</p>
-                   <p class="tabs__text"> Практические видео инструкции: Оформление профиля, Создание реферальных ссылок, Регистрация платежной системы  </p>
+                   <p class="tabs__heading">Приемущества Инкрузес:</p>
+                   <p class="tabs__text">Изучаем приемущества Партнерства / Членства / Круизного отдыха</p>
                    <div class="tabs__person">
                      <div class="tabs__person-img">
                         <img src="./src/img/icons/person.svg">
                      </div>
-                     <p class="tabs__name">Алексей Кременски</p>
+                    <p class="tabs__name">Диана Борщенко</p>
                    </div>
                  </div>
                  <div class="tabs__block">
-                   <p class="tabs__heading">Обзор Поисковика Инкрузес:</p>
-                   <p class="tabs__text">Знакомимся с круизным букингом и учимся выбирать круизы  </p>
+                   <p class="tabs__heading">Презентация:</p>
+                   <p class="tabs__text">Практические техники для проведения успешной Онлайн презентации</p>
                    <div class="tabs__person">
                      <div class="tabs__person-img">
                         <img src="./src/img/icons/person.svg">
                      </div>
-                     <p class="tabs__name">Евгений Галеев</p>
+                    <p class="tabs__name">Ярослав Калихевич</p>
+                   </div>
+                 </div>
+                 <div class="tabs__block">
+                   <p class="tabs__heading">Завершение сделки</p>
+                   <p class="tabs__text">Работа с возражениями и практические техники по закрытию сделки</p>
+                   <div class="tabs__person">
+                     <div class="tabs__person-img">
+                        <img src="./src/img/icons/person.svg">
+                     </div>
+                    <p class="tabs__name">Юлия Матвиенко</p>
                    </div>
                  </div>
                </div>
@@ -232,7 +270,7 @@
       </div>
 
     </section>
-    <section class="practice">
+    <section class="practice" id="section-practice">
       <div class="section-header">
         <div class="section-header__inner">
           <p class="section-header__background">практика</p>
@@ -349,7 +387,7 @@
          </div>
        </div>
     </section>
-    <section class="certificate ">
+    <section class="certificate " id="section-certificate">
         <div class="certificate__wrapper">
           <div class="certificate__decoration ">
             <img class="certificate__decoration-background wow fadeInUp" src="./src/img/backgrounds/certificate__decor2.png">
@@ -370,8 +408,11 @@
           <img class="certificate__arrow" src="./src/img/icons/certificate__arrow.png">
       </div>
       <img class="rectangle rectangle__bottom" src="./src/img/backgrounds/certificate__bottom.png">
+      <div class="next-button__wrapper next-button__wrapper_certificate">
+          <a class="anchor-next next-button"></a>
+      </div>
     </section>
-    <section class="start">
+    <section class="start" id="section-start">
       <div class="section-header__inner">
         <p class="section-header__background">начать</p>
         <h3 class="section-header__title section-header__title-line">Заполни форму</h3>

@@ -1,24 +1,48 @@
 .tabs{
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
+  flex-direction: column;
+  @media(min-width: 769px){
+    flex-direction: row;
+    width: 80%;
+  }
+  &__content{
+    @media(min-width: 769px){
+      width: 70%;
+    }
+  }
   &__list {
       position: relative;
       display: flex;
-      flex-direction: column;
-      width: 60%;
-      margin-bottom: 60px;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      justify-content: space-between;
       list-style: none;
-      padding-left: 27px;
       height: fit-content;
+      @media(min-width: 769px){
+        justify-content: flex-start;
+        padding-left: 27px;
+        padding-top: 0;
+        flex-direction: column;
+        width: 30%;
+        margin-bottom: 60px;
+      }
       &:before {
         position: absolute;
         content: '';
-        width: 4px;
+        top: 0;
+        height: 4px;
+        width: 100%;
+        background-color: $blue;
+        @media(min-width: 769px){
         height: 96%;
+        width: 4px;
         top: 2%;
         left: 0;
-        background-color: $blue;
+        }
       }
       &-item{
         &.active{
@@ -28,13 +52,21 @@
             &:before {
               content: '';
               position: absolute;
-              top: 5px;
-              left: -34px;
+              left: calc(50% - 5px);
+              top: -28px;
               width: 18px;
               height: 18px;
+              transition: .3s;
               border-radius: 100%;
               background-color: $orange;
+              @media(min-width: 769px){
+                top: 5px;
+                left: -34px;
+                width: 18px;
+                height: 18px;
+              }
           }
+
           }
         }
         &:nth-last-of-type(1){
@@ -46,14 +78,13 @@
       &-link {
           position: relative;
           display: inline-block;
-          margin-bottom: 80px;
           cursor: pointer;
           transition: all ease 0.3s;
             font-weight: 700;
             color: $blue2;
-
             @media(min-width: 1025px){
               font-size: 30px;
+              margin-bottom: 80px;
             }
       }
   }
@@ -66,6 +97,9 @@
   &__block{
     margin-bottom: 40px;
     line-height: 1.5;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
   }
   &__person{
     display: flex;
@@ -108,5 +142,15 @@
     @media(min-width: 1025px){
       font-size: 20px;
     }
+  }
+}
+.mob{
+  @media(min-width: 769px){
+    display: none;
+  }
+}
+.desk{
+  @media(max-width: 768px){
+    display: none;
   }
 }

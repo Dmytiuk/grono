@@ -3,29 +3,42 @@
   align-items: center;
   height: 100vh;
   background: url('../../src/img/backgrounds/introduction__background.png');
-  background-size: 125%;
+  background-size: cover;
+  background-repeat: no-repeat;
   &__description{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 100%;
+    @media(min-width: 1025px){
     width: 45%;
+    }
   }
   &__decoration{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 2.179px 24.905px 80.1px 9.9px rgba(0, 92, 152, 0.75);
+    display: none;
+    @media(min-width: 1025px){
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 2.179px 24.905px 80.1px 9.9px rgba(0, 92, 152, 0.75);
+    }
   }
   &__background{
         position: absolute;
         z-index: 0;
-        bottom: -160px;
+        bottom: 0;
+        height: auto;
+        left: auto;
+        @media(min-width: 1025px){
+        bottom: 20px;
         height: 570px;
-        left: 9%;
+        left: 16%;
+        }
   }
   &__block{
     position: relative;
@@ -34,17 +47,25 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    width: 85%;
+    width: 100%;
     text-align: center;
     background: $orange;
     border-radius: 10px;
     padding: 4%;
     z-index: 5;
     box-shadow: 2.179px 24.905px 80.1px 9.9px rgba(0, 92, 152, 0.75);
+    @media(min-width: 1025px){
+     width: 85%;
+    }
   }
   &__content{
-    width: 50%;
+    width: 100%;
+    padding: 0 0 35px 0;
+    z-index: 2;
+    @media(min-width: 1025px){
     padding: 35px 0;
+    width: 50%;
+    }
   }
   &__women{
     position: absolute;

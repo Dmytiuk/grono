@@ -1,5 +1,8 @@
 .video{
   padding-top: 60px;
+  @media(min-width: 769px){
+    padding-top: 150px;
+  }
   &__wrapper{
     width: 100%;
   }

@@ -1,11 +1,15 @@
 .form{
   display: flex;
   flex-direction: column;
+  @media(min-width: 769px){
+
+  }
   input{
     margin-bottom: 20px;
     padding: 20px 30px;
     border-radius: 50px;
     background: #F2F3F7;
+    font-family: 'Gotham Pro';
     border: 0;
     outline: none;
     &:nth-last-of-type(1){
