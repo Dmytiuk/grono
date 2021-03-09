@@ -1,6 +1,6 @@
 .certificate{
   position: relative;
-  margin-top: 150px;
+  margin-top: 100px;
   background: url('../../src/img/backgrounds/certificate__background2.png');
   background-size: cover;
   justify-content: center;
@@ -12,19 +12,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 0;
+    padding: 50px 0;
     width: 80%;
     flex-direction: column;
-    @media(min-width: 768px){
+    @media(min-width: 426px){
+      flex-direction: row;
+      padding: 60px 0;
+      width: 70%;
+    }
+    @media(min-width: 769px){
+      padding: 75px 0;
+    }
+    @media(min-width: 1025px){
       padding: 170px 0;
-    flex-direction: row;
-    width: 70%;
     }
   }
   &__decoration{
     position: relative;
-    width: 70%;
+    width: 40%;
+    @media(min-width: 426px){
+      width: 35%;
+    }
     @media(min-width: 768px){
+      width: 40%;
+    }
+    @media(min-width: 1025px){
     width: 50%;
     }
     &-background{
@@ -32,15 +44,23 @@
     }
     &-icon{
       position: absolute;
-      top: 70px;
-      left: -30px;
-      width: 50px;
+      top: 20px;
+      left: -20px;
+      width: 40px;
       z-index: 2;
       filter: drop-shadow(2.179px 24.905px 45px rgba(0,92,152,0.75));
-      @media(min-width: 768px){
-        width: auto;
+      @media(min-width: 426px){
+        top: 55px;
+        left: -30px;
+      }
+      @media(min-width: 769px){
         top: 101px;
         left: -30px;
+        width: 80px;
+      }
+      @media(min-width: 1025px){
+        width: auto;
+
       }
     }
     &-mail{
@@ -55,16 +75,18 @@
   }
   &__content{
     width: 100%;
+    padding: 20px 0;
     @media(min-width: 768px){
+    padding: 0;
     width: 50%;
     }
   }
   &__title{
     font-weight: bold;
     position: relative;
-    font-size: 40px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
     &:before{
       position: absolute;
       top: 100%;
@@ -75,17 +97,20 @@
       background-color: $orange;
     }
 
-    @media(min-width: 768px){
+    @media(min-width: 769px){
+      padding-bottom: 20px;
+      margin-bottom: 30px;
       font-size: 50px;
 
     }
   }
   &__text{
     line-height: 1.5;
-    font-size: 20px;
-    margin-bottom: 30px;
-    @media(min-width: 1025px){
-
+    font-size: 16px;
+    margin-bottom: 20px;
+    @media(min-width: 769px){
+      margin-bottom: 30px;
+      font-size: 20px;
     }
   }
   &__subtitle{
@@ -96,13 +121,21 @@
   }
   &__arrow{
     position: absolute;
-    bottom: 300px;
+    bottom: 250px;
     left: 95%;
     transform: translate( -50% , 0) rotate(-90deg);
+    @media(min-width: 426px){
+      bottom: 50px;
+      transform: translate(-50% , 0);
+      left: 40%;
+    }
     @media(min-width: 769px){
+      bottom: 80px;
+      left: 45%;
+    }
+    @media(min-width: 1025px){
       bottom: 270px;
       left: 50%;
-      transform: translate( -50% , 0);
     }
   }
 }

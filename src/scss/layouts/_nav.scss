@@ -55,7 +55,7 @@
     &-inner{
       position: relative;
       display: inline-block;
-      padding: 22px;
+      padding: 13px;
       &:before{
         position: absolute;
         top: -1px;
@@ -71,6 +71,7 @@
         }
       }
       @media(min-width: 1025px){
+        padding: 22px;
         padding-right: 22px;
         padding-left: 22px;
       }
@@ -164,6 +165,14 @@
   }
 }
 .nav__scrolled img.nav__logo-img {
-    max-height: 35px;
+  @media(min-width: 1025px){
+        max-height: 35px;
+  }
+
 }
-.nav__scrolled .nav__logo-inner:before { height: 95px}
+.nav__scrolled .nav__logo-inner:before {
+  @media(min-width: 1025px){
+      height: 95px;
+  }
+
+}

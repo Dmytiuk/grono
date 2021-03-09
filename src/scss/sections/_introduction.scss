@@ -1,10 +1,13 @@
 .introduction{
   position: relative;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 70px);
   background: url('../../src/img/backgrounds/introduction__background.png');
   background-size: cover;
   background-repeat: no-repeat;
+  @media(min-width: 1025px){
+    height: 100vh;
+  }
   &__description{
     position: relative;
     display: flex;
@@ -32,8 +35,21 @@
         position: absolute;
         z-index: 0;
         bottom: 0;
-        height: auto;
-        left: auto;
+        height: 400px;
+        left: 140px;
+        object-fit: contain;
+        @media(min-width: 376px){
+          height: 450px;
+          left: 200px;
+        }
+        @media(min-width: 426px){
+          height: 700px;
+          left: 470px;
+        }
+        @media(min-width: 769px){
+          height: 900px;
+          left: 570px;
+        }
         @media(min-width: 1025px){
         bottom: 20px;
         height: 570px;
@@ -70,28 +86,73 @@
   &__women{
     position: absolute;
     right: 0;
-    bottom: -100px;
+    bottom: -65px;
     border-radius: 50px;
+    width: 50px;
     border: 2px solid $white;
-    box-shadow: 2.179px 24.905px 80.1px 9.9px rgba(0, 92, 152, 0.75);
+    box-shadow: 2.179px 6.905px 20.1px 9.9px rgba(0, 92, 152, 0.75);
+    @media(min-width: 768px){
+      bottom: -100px;
+      width: auto;
+      box-shadow: 2.179px 24.905px 80.1px 9.9px rgba(0, 92, 152, 0.75);
+    }
   }
   &__title{
     font-weight: 300;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 36px;
-    @media(min-width: 1200px){
+
+    @media(min-width: 376px){
+      font-size: 25px;
+    }
+    @media(min-width: 426px){
+      font-size: 40px;
+    }
+    @media(min-width: 769px){
+      font-size: 55px;
+    }
+    @media(min-width: 1025px){
       font-size: 50px;
     }
   }
   &__subtitle{
     font-weight: 800;
     color: #f2f3f7;
-    font-size: 35px;
+    font-size: 23px;
+    @media(min-width: 376px){
+      font-size: 30px;
+    }
+    @media(min-width: 426px){
+      font-size: 33px;
+    }
+    @media(min-width: 769px){
+      font-size: 40px;
+    }
+    @media(min-width: 1025px){
+      font-size: 35px;
+    }
   }
   &__text{
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    @media(min-width: 376px){
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media(min-width: 426px){
+      font-size: 22px;
+      line-height: 28px;
+    }
+    @media(min-width: 769px){
+      font-size: 25px;
+      line-height: 33px;
+    }
+    @media(min-width: 1025px){
     line-height: 21px;
     font-size: 17px;
-    font-weight: 300;
     margin-bottom: 15px;
+    }
   }
 }

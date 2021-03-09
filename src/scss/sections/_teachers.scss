@@ -8,27 +8,38 @@
   &__wrapper{
     width: 82%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    @media(min-width: 769px){
+      justify-content: center;
+    }
   }
   &__item{
+    @media(max-width: 425px){
+    &:nth-of-type(even){
+      margin-right: 0;
+    }
+  }
     img{
       width: 100%;
       height: auto;
     }
     &_quarter{
-      width: 100%;
-      margin-bottom: 60px;
-      @media(min-width: 769px){
+      width: 47%;
+      margin-right: 6%;
+      margin-bottom: 40px;
+      @media(min-width: 426px){
       width: 22%;
-      margin-right: 3%
+      margin-right: 4%
       }
       img{
+        margin-bottom: 20px;
         @media(min-width: 1025px){
-          margin-bottom: 70px;
+          margin-bottom: 50px;
         }
       }
       p{
+        margin-bottom: 12px;
         @media(min-width: 1025px){
           margin-bottom: 22px;
         }
@@ -38,23 +49,26 @@
       }
     }
     &_fivefold{
-      width: 100%;
-      margin-bottom: 60px;
+      width: 47%;
+      margin-right: 6%;
+      margin-bottom: 40px;
       &:nth-last-of-type(1){
         margin-bottom: 0;
         margin-right: 0;
       }
-      @media(min-width: 769px){
+      @media(min-width: 426px){
       width: 18%;
-      margin-right: 1.8%;
+      margin-right: 2.5%;
       margin-bottom: 0;
       }
       img{
+        margin-bottom: 20px;
         @media(min-width: 1025px){
           margin-bottom: 40px;
         }
       }
       p{
+        margin-bottom: 12px;
         @media(min-width: 1025px){
           margin-bottom: 18px;
         }
@@ -71,10 +85,14 @@
     }
   }
   &__name{
+    font-size: 14px;
     color: $blue2;
     font-weight: 500;
     line-height: 1.5;
-    @media(min-width: 1025px){
+    @media(min-width: 426px){
+      font-size: 16px;
+    }
+    @media(min-width: 769px){
       font-size: 20px;
     }
   }

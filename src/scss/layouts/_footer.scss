@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
       background-color: #136f8f;
-      height: 120px;
+      height: 250px;
   @media(min-width: 769px){
     height: 200px;
 
@@ -12,15 +12,20 @@
   &__logo{
     position: absolute;
     top: 0;
-    left: 10%;
-    width: 190px;
-    height: 117px;
+    left: calc(50% - 85px);
+    width: 170px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    @media(min-width: 1025px){
+      left: 10%;
+      width: 190px;
+      height: 117px;
+    }
     img{
 
     }
@@ -30,10 +35,21 @@
     justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
-    padding-left: calc(200px + 5%);
-    padding-bottom: 30px;
+    flex-direction: column;
+    padding-top: 90px;
+    text-align: center;
+    p{
+      margin-bottom: 20px;
+      @media(min-width: 1025px){
+        padding-bottom: 0;
+      }
+    }
     @media(min-width: 1025px){
+      flex-direction: row;
       white-space: nowrap;
+      padding-top: 0;
+      padding-left: calc(200px + 5%);
+      padding-bottom: 30px;
     }
   }
   &__text{

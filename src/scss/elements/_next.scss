@@ -19,7 +19,7 @@
       border-width: 0 2px 2px 0;
       transform: rotate(45deg);
       border-color: #fff;
-      @media(min-width: 769px){
+      @media(min-width: 1025px){
         top: 25px;
         left: 27px;
         padding: 7px;
@@ -39,7 +39,7 @@
       opacity: .2;
       transform: translate(-50%,-50%);
     }
-    @media(min-width: 769px){
+    @media(min-width: 1025px){
       width: 70px;
       height: 70px;
     }
@@ -54,6 +54,7 @@
       bottom: -15px;
       z-index: 5;
       &_certificate{
+        bottom: 15px;
         a{
          background-color: inherit;
           &:before{
@@ -65,7 +66,7 @@
           bottom: 120px!important;
         }
       }
-      @media(min-width: 769px){
+      @media(min-width: 1025px){
         bottom: 0;
       }
       @media(min-width: 1025px){

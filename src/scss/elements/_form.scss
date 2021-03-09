@@ -1,17 +1,25 @@
 .form{
   display: flex;
   flex-direction: column;
-  @media(min-width: 769px){
-
+  width: 90%;
+  @media(min-width: 426px){
+    width: 80%;
+  }
+  @media(min-width: 1025px){
+    width: 100%;
   }
   input{
     margin-bottom: 20px;
     padding: 20px 30px;
+    font-size: 14px;
     border-radius: 50px;
     background: #F2F3F7;
     font-family: 'Gotham Pro';
     border: 0;
     outline: none;
+    @media(min-width: 1025px){
+        font-size: 15px;
+    }
     &:nth-last-of-type(1){
       margin-bottom: 30px;
     }

@@ -3,6 +3,9 @@ body{
   color: #ffffff;
   font-family: 'Gotham Pro';
 }
+main{
+  overflow: hidden;
+}
 strong{
   font-weight: 800;
 }
@@ -51,7 +54,7 @@ a{
     transform: scale(1.1);
   }
 
-  @media(min-width: 769px){
+  @media(min-width: 1025px){
     padding: 16px 25px;
     font-size: 15px;
   }

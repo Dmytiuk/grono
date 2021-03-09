@@ -1,6 +1,9 @@
 .studying{
   padding-top: 60px;
   @media(min-width: 769px){
+    padding-top: 100px;
+  }
+  @media(min-width: 1025px){
     padding-top: 120px;
   }
   &__wrapper{
