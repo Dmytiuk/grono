@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Grono Team</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="dist/css/main.css">
+
+  <script src="dist/js/libs.js"></script>
+  <script src="dist/js/wow.js"></script>
+  <script>
+    new WOW().init();
+    wow = new WOW(
+        {
+        boxClass:     'wow',
+        animateClass: 'animated',
+        offset:       0
+       }
+    )
+  </script>
+  <link rel="stylesheet" href="dist/css/libs.css">
+  <script src="dist/js/main.js"></script>
+  <link rel="shortcut icon" href="./src/img/icons/favicon.jpg" type="image/jpg">
+  <meta property="og:title" content="Grono"/>
+  <meta itemprop="description" content="Мощный запуск: от "0" до результата"/>
+  <meta property="og:description" content="Мощный запуск: от "0" до результата"/>
+  <meta property="og:image" content="./src/img/icons/favicon.jpg"/>
+  <meta property="og:image:type" content="image/jpeg"/>
+  <meta property="og:image:width" content="1000"/>
+  <meta property="og:image:height" content="330"/>
+  <meta property="og:url" content="url" />
+  <meta property="og:type" content="website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="nav__fixed">
+    <div class="nav" id="js-navigation">
+      <div class="nav__container container">
+        <div class="nav__row row">
+          <div class="nav__logo ">
+            <button class="hamburger hamburger_effect-2" type="button" id="js-nav-hamburger">
+              <span class="hamburger__lines">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </button>
+            <div class="nav__logo-inner">
+              <img class="nav__logo-img" src="./src/img/icons/logo.png" alt="Grono">
+            </div>
+          </div>
+          <nav class="nav__menu" id="js-navigation-menu">
+            <ul>
+              <li class="nav__menu-item">
+                <a class="nav__menu-item-link js-menu-item-link active" href="#section-studying">Этапы обучения</a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-practice">Практика</a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-certificate">Сертификат</a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-item-link js-menu-item-link" href="#section-start">Начать обучение</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+      <section class="thank-you">
+              <div class="thank-you__container">
+                <div class="section-header">
+                  <div class="section-header__inner">
+                    <p style="color: #2F80BB;" class="section-header__background">свой бизнес</p>
+                    <h3 style="color: #ffffff;" class="section-header__title section-header__title-line">Поздравляем с успешной регистрацией на обучающий курс команды Grono Team "Мощный запуск от "0" до результата"</h3>
+                  </div>
+                 </div>
+                 <div class="thank-you__wrapper">
+                   <div class="thank-you__content">
+                     <div class="thank-you__content-block">
+                       <img src="./src/img/icons/person.svg">
+                       <p class="thank-you__text">После просмотра видео <strong>обратись к своему личному Наставнику </strong> обратись к своему личному Наставнику для получения у него ссылки на регистрацию в платформе Grono.</p>
+                     </div>
+                     <div class="thank-you__content-block">
+                       <img src="./src/img/icons/mail.svg">
+                       <p class="thank-you__text">Переходи в свой почтовый ящик <strong>это и другие задания с видео будут приходить тебе на почту.</strong> </p>
+                     </div>
+                     <div class="thank-you__content-block">
+                       <img src="./src/img/icons/mail-.svg">
+                       <p class="thank-you__text">P.S. Если не найдешь письмо во входящих - <strong>проверь папку "спам"</strong>  и перенеси письмо во входящие и пометь его как "важное"</p>
+                     </div>
+                     <div class="thank-you__content-block">
+                       <img src="./src/img/icons/chat.svg">
+                       <p class="thank-you__text"><strong>Выбери один из мессенджеров</strong>  для получения мгновенных уведомлений о заданиях курса</p>
+                     </div>
+                   </div>
+                   <div class="thank-you__video">
+                     <iframe class="video__iframe" src="https://www.youtube.com/embed/5eaORjvOiyE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     <div class="thank-you__social">
+                       <a href="#"><img src="./src/img/icons/telegram.svg"></a>
+                       <a href="#"><img src="./src/img/icons/viber.svg"></a>
+                     </div>
+                   </div>
+                 </div>
+            </div>
+            <button class="btn thank-you__btn">На главную</button>
+          <img class="rectangle rectangle__bottom thank-you__bottom" src="./src/img/backgrounds/section__bottom.png">
+          <p class="thank-you__copyright">© 2018—2021. Копирование материалов сайта запрещено</p>
+      </section>
+  </main>
+</body>
+
+
+</html>
