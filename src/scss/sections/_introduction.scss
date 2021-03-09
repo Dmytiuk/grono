@@ -11,11 +11,12 @@
   @media(min-width: 600px){
     height: 650px;
   }
-  @media(min-width: 769px){
+  @media(min-width: 820px){
     height: 800px;
   }
   @media(min-width: 1025px){
     height: 100vh;
+    min-height: 750px;
   }
   &__description{
     position: relative;
@@ -133,7 +134,7 @@
     @media(min-width: 500px){
       font-size: 40px;
     }
-    @media(min-width: 769px){
+    @media(min-width: 820px){
       font-size: 55px;
     }
     @media(min-width: 1025px){
@@ -150,7 +151,7 @@
     @media(min-width: 500px){
       font-size: 33px;
     }
-    @media(min-width: 769px){
+    @media(min-width: 820px){
       font-size: 40px;
     }
     @media(min-width: 1025px){
@@ -170,7 +171,7 @@
       font-size: 22px;
       line-height: 28px;
     }
-    @media(min-width: 769px){
+    @media(min-width: 820px){
       font-size: 25px;
       line-height: 33px;
     }

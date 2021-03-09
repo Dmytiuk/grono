@@ -31,6 +31,7 @@ function scroll(scrollLink, speed){
 		scroll($( $(this).attr('href') ), 1500);
 		$('#js-navigation-menu').removeClass('nav__menu_active');
 		$('#js-nav-hamburger').removeClass('active');
+    $('.hamburger__lines').removeClass('hamburger__lines_active');
 	});
 
 	$('.js-anchor').click(function(e){

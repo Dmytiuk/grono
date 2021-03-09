@@ -164,6 +164,14 @@
       text-align: right;
     }
   }
+  &__thank-you{
+    @media(max-width: 1024px){
+      background-color: #006bae;
+    }
+    &.hamburger{
+      display: none;
+    }
+  }
 }
 .nav__scrolled img.nav__logo-img {
   @media(min-width: 1025px){
@@ -176,4 +184,7 @@
       height: 95px;
   }
 
+}
+.nav__thank-you .hamburger{
+  visibility: hidden;
 }
