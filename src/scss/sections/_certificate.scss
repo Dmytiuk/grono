@@ -15,7 +15,7 @@
     padding: 50px 0;
     width: 80%;
     flex-direction: column;
-    @media(min-width: 426px){
+    @media(min-width: 500px){
       flex-direction: row;
       padding: 60px 0;
       width: 70%;
@@ -30,7 +30,7 @@
   &__decoration{
     position: relative;
     width: 40%;
-    @media(min-width: 426px){
+    @media(min-width: 500px){
       width: 35%;
     }
     @media(min-width: 768px){
@@ -49,7 +49,7 @@
       width: 40px;
       z-index: 2;
       filter: drop-shadow(2.179px 24.905px 45px rgba(0,92,152,0.75));
-      @media(min-width: 426px){
+      @media(min-width: 500px){
         top: 55px;
         left: -30px;
       }
@@ -124,7 +124,7 @@
     bottom: 250px;
     left: 95%;
     transform: translate( -50% , 0) rotate(-90deg);
-    @media(min-width: 426px){
+    @media(min-width: 500px){
       bottom: 50px;
       transform: translate(-50% , 0);
       left: 40%;

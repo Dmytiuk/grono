@@ -38,5 +38,5 @@ function scroll(scrollLink, speed){
 		scroll($( $(this).attr('data-href') ), 1500);
 	});
 
-new WOW().init();
+
 });

@@ -10,13 +10,14 @@
   }
   &__scrolled{
     @media(min-width: 1025px){
-      background-color: #136f8f;
+      background-color: #006bae;
     }
   }
   &__container{
     @media(max-width: 1024px){
       height: 100%;
       flex-basis: 100%;
+      padding-left: 15px;
     }
   }
   &__fixed{

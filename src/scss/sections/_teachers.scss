@@ -15,7 +15,7 @@
     }
   }
   &__item{
-    @media(max-width: 425px){
+    @media(max-width: 500px){
     &:nth-of-type(even){
       margin-right: 0;
     }
@@ -27,15 +27,15 @@
     &_quarter{
       width: 47%;
       margin-right: 6%;
-      margin-bottom: 40px;
-      @media(min-width: 426px){
+      margin-bottom: 60px;
+      @media(min-width: 500px){
       width: 22%;
       margin-right: 4%
       }
       img{
         margin-bottom: 20px;
         @media(min-width: 1025px){
-          margin-bottom: 50px;
+          margin-bottom: 30px;
         }
       }
       p{
@@ -56,7 +56,7 @@
         margin-bottom: 0;
         margin-right: 0;
       }
-      @media(min-width: 426px){
+      @media(min-width: 500px){
       width: 18%;
       margin-right: 2.5%;
       margin-bottom: 0;
@@ -89,7 +89,7 @@
     color: $blue2;
     font-weight: 500;
     line-height: 1.5;
-    @media(min-width: 426px){
+    @media(min-width: 500px){
       font-size: 16px;
     }
     @media(min-width: 769px){

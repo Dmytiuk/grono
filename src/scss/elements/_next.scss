@@ -6,7 +6,7 @@
     background-color: #fca328;
     border-radius: 100%;
     transition: all .5s ease;
-
+    cursor: pointer;
     &:after{
       content: '';
       position: absolute;
