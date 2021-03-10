@@ -49,7 +49,7 @@ function scroll(scrollLink, speed){
               'fn': {
                   'left': {
                       'start': -100,
-                      'end': 0,
+                      'end': -2,
                       'unit': '%'
                   }
               }
