@@ -80,13 +80,7 @@
     }
     iframe{
       margin-bottom: 30px;
-      height: 65%;
-      @media(min-width: 600px){
-        height: 300px;
-      }
-      @media(min-width: 800px){
-        height: 350px;
-      }
+      height: 88%;
     }
   }
   &__text{
@@ -121,6 +115,12 @@
     a{
         display: block;
         margin-right: 20px;
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+          transform: scale(1.1);
+          opacity: .8;
+        }
         &:nth-of-type(2){
           margin-right: 0;
         }

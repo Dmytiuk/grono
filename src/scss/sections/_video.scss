@@ -16,23 +16,24 @@
     position: relative;
     text-align: center;
     width: 90%;
-    height: 110px;
-    @media(min-width: 375px){
-        height: 150px;
-    }
-    @media(min-width: 500px){
-        height: 250px;
-    }
-    @media(min-width: 769px){
-        height: 350px;
-    }
-    @media(min-width: 1025px){
-        height: 400px;
-    }
+    // height: 110px;
+    padding-bottom:56.25%;
+    // @media(min-width: 375px){
+    //     height: 150px;
+    // }
+    // @media(min-width: 500px){
+    //     height: 250px;
+    // }
+    // @media(min-width: 769px){
+    //     height: 350px;
+    // }
+    // @media(min-width: 1025px){
+    //     height: 400px;
+    // }
   }
   &__decoration{
     position: absolute;
-    top: -20%;
+    top: -18%;
     left: -10%;
     z-index: -1;
     width: 20%;
@@ -84,8 +85,11 @@
     }
   }
   &__iframe{
-    width: 100%;
-    height: 100%;
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:88%;
   }
 }
 @keyframes radial-pulse {
