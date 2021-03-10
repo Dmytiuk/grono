@@ -39,5 +39,23 @@ function scroll(scrollLink, speed){
 		scroll($( $(this).attr('data-href') ), 1500);
 	});
 
+  (function($) {
+  $(document).ready(function() {
+      $.jScrollability([
+          {
+              'selector': '.certificate__decoration-mail',
+              'start': 'parent',
+              'end': 'parent',
+              'fn': {
+                  'left': {
+                      'start': -100,
+                      'end': 0,
+                      'unit': '%'
+                  }
+              }
+          }
+      ]);
+  });
+})(jQuery);
 
 });
